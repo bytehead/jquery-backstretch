@@ -71,6 +71,8 @@
     , centeredY: true   // Should we center the image on the Y axis?
     , duration: 5000    // Amount of time in between slides (if slideshow)
     , fade: 0           // Speed of fade transition between slides
+    , height: '100%'    // Height of the background
+    , widht: '100%'     // Width of the background
   };
 
   /* STYLES
@@ -86,8 +88,8 @@
         , overflow: 'hidden'
         , margin: 0
         , padding: 0
-        , height: '100%'
-        , width: '100%'
+        , height: $.fn.backstretch.defaults.height
+        , width: $.fn.backstretch.defaults.width
         , zIndex: -999999
       }
     , img: {
